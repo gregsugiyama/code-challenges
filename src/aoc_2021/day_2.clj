@@ -31,4 +31,4 @@
   (apply * (find-position [0 0] input))
 
   ;; SOLUTION PT 2
-  (apply * (drop-last (find-position-2 [0 0 0] test-input))))
+  (apply * (drop-last (find-position-2 [0 0 0] input))))
