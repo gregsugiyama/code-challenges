@@ -34,10 +34,11 @@
 (def sliding-scale-input (->> (partition 3 1 input)
                               (map #(apply + %))))
 
-(def positive-deltas (->> (make-deltas sliding-scale-input)
+(def positive-deltas-2 (->> (make-deltas sliding-scale-input)
                           (filter pos?)
                           (count)))
 
 ;; ----------------------------------------------------------------
 (comment
+  (+ 1 1)
   input)

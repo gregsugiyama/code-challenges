@@ -33,8 +33,10 @@
 
 (defn flatten-input
   [v1 v2]
-  (apply concat (map (fn [n1 n2]
-                       (into [] [n1 n2])) v1 v2)))
+  (apply
+   concat
+   (map (fn [n1 n2]
+          (into [] [n1 n2])) v1 v2)))
 
 (defn make-intervals
   [input]
